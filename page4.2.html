@@ -1,0 +1,279 @@
+<html>
+
+<head>
+   <title>Dark Horizontal Navigation</title>
+   <meta charset="UTF-8">
+  <link rel="stylesheet" href="stylenav.css">
+  <script type="text/javascript"> 
+  
+ //slide 1
+var i = 0; 
+var image = new Array();   
+// LIST OF IMAGES 
+image[0] = "http://www.ballan.ca/images/gallery_texture.jpg"; 
+image[1] = "http://www.ballan.ca/gallery_texture/album/slides/_JSC0225.JPG"; 
+image[2] = "http://www.ballan.ca/gallery_texture/album/slides/_JSC0372.JPG";   
+image[3] = "http://www.ballan.ca/gallery_texture/album/slides/_JSC0251.JPG";   
+image[4] = "http://www.ballan.ca/gallery_texture/album/slides/_JSC0228.JPG";   
+image[5] = "http://www.ballan.ca/gallery_texture/album/slides/_JSC0263.JPG";   
+image[6] = "http://www.ballan.ca/gallery_texture/album/slides/_JSC0275.JPG";   
+image[7] = "http://www.ballan.ca/gallery_texture/album/slides/_JSC0277.JPG";   
+var k = image.length-1;    
+var caption = new Array(); 
+
+function next(){
+var img= document.getElementById("slide"); 
+img.src= image[i]; 
+if(i < k ) { i++;}  
+else  { i = 0; }
+}
+
+function prev(){
+var img= document.getElementById("slide"); 
+img.src= image[i]; 
+if(i >0 ) { i--;}  
+else  { i = k; }
+}
+
+function swapImage(){ 
+var img= document.getElementById("slide"); 
+img.src= image[i]; 
+if(i < k ) { i++;}  
+else  { i = 0; } 
+setTimeout("swapImage()",2500); 
+} 
+// slide 2
+
+var a = 0; 
+var image2 = new Array();   
+// LIST OF IMAGES 
+image2[0] = "http://www.ballan.ca/images/gallery_painted_lens.jpg"; 
+image2[1] = "http://www.ballan.ca/gallery_painted_lens/album/slides/_DSC0552.JPG"; 
+image2[2] = "http://www.ballan.ca/gallery_painted_lens/album/slides/IMG_1886.jpg"; 
+image2[3] = "http://www.ballan.ca/gallery_painted_lens/album/slides/_DSC0032.JPG"; 
+image2[4] = "http://www.ballan.ca/gallery_painted_lens/album/slides/_DSC0202.JPG"; 
+image2[5] = "http://www.ballan.ca/gallery_painted_lens/album/slides/_JSC0078.JPG"; 
+image2[6] = "http://www.ballan.ca/gallery_painted_lens/album/slides/_DSC0560.JPG"; 
+image2[7] = "http://www.ballan.ca/gallery_painted_lens/album/slides/_JSC0052.JPG"; 
+	
+var b = image2.length-1;    
+
+
+function next2(){
+var img= document.getElementById("slide2"); 
+img.src= image2[a]; 
+if(a < b ) { a++;}  
+else  { a = 0; }
+}
+
+function prev2(){
+var img= document.getElementById("slide2"); 
+img.src= image2[a]; 
+if(a >0 ) { a--;}  
+else  { a = b; }
+}
+
+function swapImage2(){ 
+var img= document.getElementById("slide2"); 
+img.src= image2[a]; 
+if(a < b ) { a++;}  
+else  { a = 0; } 
+setTimeout("swapImage2()",2500); 
+} 
+//slider3
+
+var c = 0; 
+var image3 = new Array();   
+// LIST OF IMAGES 
+image3[0] = "http://www.ballan.ca/images/gallery_light.jpg"; 
+image3[1] = "http://www.ballan.ca/gallery_light/album/slides/Summer%2008%20103.jpg"; 
+image3[2] = "http://www.ballan.ca/gallery_light/album/slides/_DSC0118.JPG"; 
+image3[3] = "http://www.ballan.ca/gallery_light/album/slides/_DSC0120.JPG"; 
+image3[4] = "http://www.ballan.ca/gallery_light/album/slides/_DSC0125.JPG"; 
+image3[5] = "http://www.ballan.ca/gallery_light/album/slides/_DSC0195.JPG"; 
+image3[6] = "http://www.ballan.ca/gallery_light/album/slides/_DSC0371.JPG"; 
+image3[7] = "http://www.ballan.ca/gallery_light/album/slides/_DSC0861.JPG";   
+var d = image3.length-1;    
+
+
+function next3(){
+var img= document.getElementById("slide3"); 
+img.src= image3[c]; 
+if(c < d ) { c++;}  
+else  { c = 0; }
+}
+
+function prev3(){
+var img= document.getElementById("slide3"); 
+img.src= image3[c]; 
+if(c >0 ) { c--;}  
+else  { c = d; }
+}
+
+
+function swapImage3(){ 
+var img= document.getElementById("slide3"); 
+img.src= image3[c]; 
+if(c < d ) { c++;}  
+else  { c = 0; } 
+setTimeout("swapImage3()",2500); 
+}
+
+//slider4
+
+var x = 0; 
+var image4 = new Array();   
+// LIST OF IMAGES 
+image4[0] = "http://www.ballan.ca/images/gallery_lifestyle.jpg"; 
+image4[1] = "http://www.ballan.ca/gallery_lifestyle/album/slides/_JSC0256.JPG"; 
+image4[2] = "http://www.ballan.ca/gallery_lifestyle/album/slides/_JSC0036.JPG";   
+image4[3] = "http://www.ballan.ca/gallery_lifestyle/album/slides/_JSC0072.JPG";  
+image4[4] = "http://www.ballan.ca/gallery_lifestyle/album/slides/_JSC0279.JPG";  
+image4[5] = "http://www.ballan.ca/gallery_lifestyle/album/slides/_JSC0414.JPG";  
+image4[6] = "http://www.ballan.ca/gallery_lifestyle/album/slides/_JSC0435.JPG";  
+image4[7] = "http://www.ballan.ca/gallery_lifestyle/album/slides/_JSC0443.JPG";   
+var y = image4.length-1;    
+
+
+function next4(){
+var img= document.getElementById("slide4"); 
+img.src= image4[x]; 
+if(x < y ) { x++;}  
+else  { x = 0; }
+}
+
+function prev4(){
+var img= document.getElementById("slide4"); 
+img.src= image4[x]; 
+if(x >0 ) { x--;}  
+else  { x = y; }
+}
+
+function swapImage4(){ 
+var img= document.getElementById("slide4"); 
+img.src= image4[x]; 
+if(x < y ) { x++;}  
+else  { x = 0; } 
+setTimeout("swapImage4()",2500); 
+}
+
+//swap caller 
+function start(){
+swapImage()
+swapImage2()
+swapImage3()
+swapImage4()
+}
+</script> 
+
+</head>
+<body onload="start()" >
+ <footer>
+<p class="foot">
+
+
+©2014 Barbara Allan Photography
+
+ <a href="http://facebook.com/" title="facebook"><img class="iconF" src="facebook500.png" alt="facebook" ></a>
+<a href="http://twitter.com/" title="twitter"><img class="iconF" src="twit.png" alt="twitter" ></a>
+<a href="page6.html" title="contact"><img class="iconF" src="contact.png" alt="contact" ></a>
+<a href="http://pinterest.com/USERNAME/" title="pinterest"><img class="iconF" src="pinterest.png" alt="pinterest" ></a>
+&nbsp
+</p>
+
+
+</footer>
+
+    <nav>
+	<a href="home.html" title="Home">Home</a>
+    <a href="page2.html" title="Artist Statement">Artist Statement</a>
+    <a href="page3.html" title="Exhibitions">Exhibitions</a>
+        <a href="page4.2.html" title="Galleries">Galleries</a>
+        <a href="page5.2.html" title="Consultations & Prints">Consultations & Prints</a>
+        <a href="page6.html" title="Contact">Contact</a>
+	
+    
+    </nav>
+<div id="topDiv3">
+
+
+<div class="gal" >
+<h1 class="gal">Texture</h1>
+	<table style="border:none;background-color:transparent;display:inline-block; "> 
+<tr> 
+<td>
+<img onclick="prev()" title="Previous" alt ="Prev" height="25" width="15"src="rightarrow.png"/> 
+</td>
+<td> 
+<a href="http://www.ballan.ca/gallery_texture/album/index.html" title="texture"><img name="slide" id="slide" alt ="my images" height="285" width="485" src="image-1.png"/></a>
+</td> 
+<td>
+<img onclick="next()" title="Next" alt ="Next" height="25" width="15" src="leftarrow.png"/> 
+</td>
+</tr> 
+  
+  </table>
+</div>
+  
+  
+  <div class="gal">
+  <h1 class="gal">Light</h1>
+	<table style="border:none;background-color:transparent;display:inline-block" > 
+<tr> 
+<td>
+<img onclick="prev3()" title="Previous" alt ="Prev" height="25" width="15"src="rightarrow.png"/> 
+</td>
+<td> 
+<a href="http://www.ballan.ca/gallery_light/album/index.html" title="texture"><img name="slide3" id="slide3" alt ="my images" height="285" width="485" src="http://www.ballan.ca/images/gallery_painted_lens.jpg"/></a> 
+</td> 
+<td>
+<img onclick="next3()" title="Next" alt ="Next" height="25" width="15" src="leftarrow.png"/> 
+</td>
+</tr> 
+  
+</table>
+</div>
+
+
+<div  class="gal" >
+<h1 class="gal"> Painted Lens</h1>
+	<table style="border:none;background-color:transparent;display:inline-block" > 
+<tr> 
+<td>
+<img onclick="prev2()" title="Previous" alt ="Prev" height="25" width="15"src="rightarrow.png"/> 
+</td>
+<td> 
+<a href="http://www.ballan.ca/gallery_painted_lens/album/index.html" title="texture"><img name="slide2" id="slide2" alt ="my images" height="285" width="485" src="http://www.ballan.ca/images/gallery_painted_lens.jpg"/></a> 
+</td> 
+<td>
+<img onclick="next2()" title="Next" alt ="Next" height="25" width="15" src="leftarrow.png"/> 
+</td>
+</tr> 
+  
+</table>
+</div>
+
+<div  class="gal" >
+<h1 class="gal">Lifestyle</h1>
+	<table style="border:none;background-color:transparent;display:inline-block; "> 
+<tr> 
+<td>
+<img onclick="prev4()" title="Previous" alt ="Prev" height="25" width="15"src="rightarrow.png"/> 
+</td>
+<td> 
+<a href="http://www.ballan.ca/gallery_lifestyle/album/index.html" title="texture"><img name="slide4" id="slide4" alt ="my images" height="285" width="485" src="image-1.png"/></a> 
+</td> 
+<td>
+<img onclick="next4()" title="Next" alt ="Next" height="25" width="15" src="leftarrow.png"/> 
+</td>
+</tr> 
+</div>
+
+
+ </div>
+ </div>
+
+
+
+</body>
+</html>

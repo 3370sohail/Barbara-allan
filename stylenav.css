@@ -1,0 +1,301 @@
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-ThinItalic-webfont.eot');
+    src: url('Roboto-ThinItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Roboto-ThinItalic-webfont.woff') format('woff'),
+         url('Roboto-ThinItalic-webfont.ttf') format('truetype'),
+         url('Roboto-ThinItalic-webfont.svg#RobotoThinItalic') format('svg'); (under the Apache Software License). 
+    font-weight: 200;
+    font-style: italic;
+}
+
+body {
+  font: 13px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
+  color: #404040;
+  background-color: #1F1F1F;
+  background-repeat: repeat-10;
+  margin:0px;
+}
+ #topDiv{
+                   height:150%;
+					width:100%;
+                   background-color:#1F1F1F;
+				   top:20%;
+                   margin-bottom:5%;
+				   
+                 
+           }
+ #topDiv2{
+                   height:100%;
+					width:100%;
+                   background-color:#1F1F1F;
+				   top:20%;
+                   margin-bottom:3%;
+				   
+                 
+           }		
+ #topDiv3{
+                   height:150%;
+					width:100%;
+                   background-color:#1F1F1F;
+				   top:20%;
+                   margin-bottom:3%;
+				   
+                 
+           }		   
+		    footer{
+                   
+					width:100%;
+					top:92%;
+				position:fixed;
+               margin:0px;
+                 background-color: black;
+				 overflow: hidden;
+			   text-align:center;
+			   -webkit-transition: height 2s; /* For Safari 3.1 to 6.0 */
+    transition: height 2s;
+	-webkit-transition: all ease .4s;
+	 z-index:1;
+	 background-color: black;
+				opacity: .9; 
+           }
+		   p.foot{
+		   color:white;
+			font: 15px 'Roboto','Lucida Grande', Tahoma, Verdana, sans-serif;
+			   text-align:center;
+			   
+		   }
+		   footer:hover{
+		   opacity: 1;
+		   }
+		   .iconF {
+width:20px;
+height:20px;
+margin-left:1%;
+ opacity: 1;
+ z-index:2;
+ -webkit-filter: grayscale(1);
+}
+
+.iconF:hover{
+-webkit-filter: grayscale(0);
+}
+		   
+.contact{
+margin-top:20%;
+margin-left:10%;
+
+}
+.msg{
+float:right;
+margin-top:20%;
+margin-right:10%;
+color:white;
+font: 13px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
+} 
+ #bodyDiv{text-align:left;
+                   height:200%;
+                   width:auto;
+                   color:white;
+                   margin:0px;
+				   background:grey;
+				   position: absolute;
+                 
+           }
+ #bodyDiv2{text-align:left;
+                   height:auto;
+                   width:100%;
+                   color:white;
+                   margin:0px;
+				   background:black;
+                 
+           }
+
+#logo{height:100%;
+                 width:100%;
+				 
+                
+	
+				 
+           }	
+
+nav{
+			   left: 0px;
+				top: 0px;
+				z-index: 1;
+               padding:0px;
+               margin:0px;
+               width:100%;
+               height:auto%;
+               margin:auto;
+                background-color: black;
+				opacity: .8; 
+               border-radius:2px;
+               padding-top:2%;
+               padding-bottom:1%;
+               position: fixed;
+			   text-align: center;
+               
+           }
+           
+           nav > a{text-decoration:none;
+				   text-align: center;
+                  
+				   width:30%;
+                     font: 2vw 'Roboto','Lucida Grande', Tahoma, Verdana, sans-serif;
+	               
+                   color:white;
+                   padding-left:2%;
+                   padding-right:2%;
+                   padding-top:2%;
+                   padding-bottom:1%;
+                   -webkit-transition: all ease .2s;
+				   z-index: 2;
+           }
+           
+           nav > a:hover{
+		   background:#929292;
+                  box-shadow: 0px 10px #929292;        
+				  color:FFCC00;
+           }
+		   
+		   .box2 {
+  display: inline-block;
+  width: 40%;
+  height: auto;
+  margin: 2%;
+  color:white;
+   background-color: #1F1F1F;
+}
+		   .box1 {
+  display: inline-block;
+  width: 40%;
+  height: auto;
+  margin-top:5%;
+  margin-left:6%;
+  color:white;
+   background-color: #1F1F1F;
+}
+		   .box1s {
+
+  display: inline-block;
+  width: 40%;
+  height: auto;
+  margin-top:8%;
+  margin-left:6%;
+  color:white;
+   background-color: #1F1F1F;
+}
+   .box3 {
+   top:15%;
+   left:50%;
+   display: inline-block;
+    position: absolute;
+  width: 40%;
+  height: auto;
+  margin: 2%;
+  color:white;
+  background-color: #1F1F1F;
+}
+.box4 {
+top:5%;
+display: inline-block;
+position: absolute;
+  width: 40%;
+  height: auto;
+  margin: 5%;
+  color:white;
+  background-color: #1F1F1Fk;
+}
+.box5 {
+top:100%;
+display: inline-block;
+position: absolute;
+  width: 40%;
+  height: auto;
+  margin: 5%;
+  color:white;
+  background-color: #1F1F1Fk;
+}
+section {
+position:static;
+ font: 3vh  Tahoma, Verdana, sans-serif;
+ color:white;
+ outline:none;
+ 
+}
+		   summary::-webkit-details-marker {
+  display: none;
+
+}
+summary{
+font-size: 1.5vw; 
+outline:none;
+}
+summary:after {
+
+  background: black; 
+  border-radius: 5px; 
+  content: "+"; 
+  float: left;
+  
+  font-size: 1.5em; 
+  font-weight: bold; 
+  margin: -5px 10px 0 0; 
+  padding: 0; 
+  text-align: center; 
+  width: 5%;
+}
+details{
+margin:3%;
+}
+details[open] summary:after {
+  content: "-";
+}
+
+
+h2 {
+color:white;
+ font: 2vw 'Roboto','Lucida Grande', Tahoma, Verdana, sans-serif;
+}
+h3 {
+color:white;
+ font: 1.7vw 'Roboto','Lucida Grande', Tahoma, Verdana, sans-serif;
+}
+ li{font: 1.5vw 'Roboto', 'Lucida Grande', Tahoma, Verdana, sans-serif;
+ color:white;
+	
+	background-color: #333333;
+	list-style-type: none;
+	margin:1%;
+	padding:2%;
+}
+
+ li:hover{
+	color:#FFC000;
+	opacity:.6;
+	filter: alpha(opacity=60); /* For IE8 and earlier */
+	transition: color .5s ease-in-out;
+	-moz-transition: color .5s ease-in-out;
+	-webkit-transition: color .5s ease-in-out;
+	transition: opacity .5s ease-in-out;
+	-moz-transition: opacity .5s ease-in-out;
+	-webkit-transition: opacity .5s ease-in-out;
+}
+
+div.gal{
+	position: relative;
+	border:none;
+	background-color:transparent;
+	display:inline-block;
+	left:8%;
+	top: 6%;
+	margin:2%;
+
+
+}
+h1.gal{
+color:white;
+font: 2.5vw 'Roboto','Lucida Grande', Tahoma, Verdana, sans-serif;
+}

@@ -1,0 +1,190 @@
+
+
+
+body {
+  font: 13px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
+  color: #404040;
+  background: url(C:/Users/3370sohail/Pictures/blacktexture1.png);
+  background-repeat: repeat-10;
+  margin:0px;
+}
+ #topDiv{text-align:center;
+                   height:auto;
+                   width:auto;
+                   
+                   margin:0px;
+                 
+           }
+		   
+ #bodyDiv{text-align:left;
+                   height:100%;
+                   width:auto;
+                   color:white;
+                   margin:0px;
+				   background:grey;
+                 
+           }
+ #bodyDiv2{text-align:left;
+                   height:100%;
+                   width:auto;
+                   color:white;
+                   margin:0px;
+				   background:black;
+                 
+           }
+
+#logo{height:100%;
+                 width:100%;
+				 
+                
+	
+				 
+           }	
+
+nav{
+			   left: 0px;
+				top: 0px;
+				z-index: 1;
+               padding:0px;
+               margin:0px;
+               width:100%;
+               height:auto%;
+               margin:auto;
+                background-color: black;
+				opacity: .8; 
+               border-radius:2px;
+               padding-top:2%;
+               padding-bottom:1%;
+               position: fixed;
+			   text-align: center;
+               
+           }
+           
+           nav > a{text-decoration:none;
+				   text-align: center;
+                   font-size:1.5vw;
+				   width:30%;
+                     
+	               font-weight:bold;
+                   color:white;
+                   padding-left:4%;
+                   padding-right:4%;
+                   padding-top:2%;
+                   padding-bottom:1%;
+                   -webkit-transition: all ease .2s;
+           }
+           
+           nav > a:hover{
+		   background:#929292;
+                  box-shadow: 0px 10px #929292;        
+           }
+section {
+position:relative;
+float:left;
+float:top;
+margin:2%;
+padding:2%;
+ width:50%;
+ height: auto;
+ background: grey;
+ font: 15px 'Lucida Grande', Tahoma, Verdana, sans-serif;
+}
+		   summary::-webkit-details-marker {
+  display: none
+}
+summary:after {
+  background: black; 
+  border-radius: 5px; 
+  content: "+"; 
+  float: left;
+  
+  font-size: 1.5em; 
+  font-weight: bold; 
+  margin: -5px 10px 0 0; 
+  padding: 0; 
+  text-align: center; 
+  width: 20px;
+}
+details{
+margin:3%;
+}
+details[open] summary:after {
+  content: "-";
+}
+#slideshow {
+
+margin:2%;
+position:relative;
+float: right;
+float:top;
+}
+#tablediv{
+position:relative;
+float:left;
+float:top;
+margin:4%;
+}
+
+		   
+ li{
+	color:white;
+	background-color: #333333;
+	list-style-type: none;
+	margin:1%;
+	padding:2%;
+}
+
+ li:hover{
+	color:#FFC000;
+	opacity:.6;
+	filter: alpha(opacity=60); /* For IE8 and earlier */
+	transition: color .5s ease-in-out;
+	-moz-transition: color .5s ease-in-out;
+	-webkit-transition: color .5s ease-in-out;
+	transition: opacity .5s ease-in-out;
+	-moz-transition: opacity .5s ease-in-out;
+	-webkit-transition: opacity .5s ease-in-out;
+}
+
+#galleryr{
+position:relative;
+float:right;
+float:top;
+height:40%;
+                 width:30%;
+				 margin-right:16%;
+                 margin-top:2%;
+	
+				 
+           }
+		   
+		   #galleryl{
+			position:relative;
+		   float:left;
+		   float:top;
+height:40%;
+                 width:30%;
+				 margin-left:16%;
+				 margin-top:2%;
+                
+	
+				 
+           }
+		   
+		   
+		   #left{
+		   position:relative;
+		   float:left;
+		   float:top;
+		   height:40%;
+                 width:40%;
+				 
+		   }
+		    #right{
+		   position:relative;
+		   float:right;
+		   float:top;
+		   height:40%;
+                 width:40%;
+				 
+		   }

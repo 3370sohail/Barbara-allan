@@ -1,0 +1,128 @@
+<html>
+
+<head>
+   <title>Dark Horizontal Navigation</title>
+  <link rel="stylesheet" href="stylenav.css">
+  
+  <script type="text/javascript"> 
+var i = 0; 
+var image = new Array();   
+// LIST OF IMAGES 
+image[0] = "http://www.ballan.ca/page_images/exhibition01.jpg"; 
+image[1] = "http://www.ballan.ca/page_images/exhibition04.jpg"; 
+image[2] = "http://www.ballan.ca/page_images/exhibition02.jpg";   
+var k = image.length-1;    
+var caption = new Array(); 
+
+
+
+function next(){
+var img= document.getElementById("slide"); 
+img.src= image[i]; 
+if(i < k ) { i++;}  
+else  { i = 0; }
+}
+
+function prev(){
+var img= document.getElementById("slide"); 
+img.src= image[i]; 
+if(i >0 ) { i--;}  
+else  { i = k; }
+}
+
+function swapImage(){ 
+var img= document.getElementById("slide"); 
+img.src= image[i]; 
+if(i < k ) { i++;}  
+else  { i = 0; } 
+setTimeout("swapImage()",3000); 
+} 
+function addLoadEvent(func) { 
+var oldonload = window.onload; 
+if (typeof window.onload != 'function') { 
+window.onload = func; 
+} else  { 
+window.onload = function() { 
+if (oldonload) { 
+oldonload(); 
+} 
+func(); 
+} 
+} 
+} 
+addLoadEvent(function() { 
+swapImage(); 
+});  
+</script> 
+</script>
+</head>
+<body>
+
+    <nav>
+<a href="home.html" title="Home">Home</a>
+    <a href="page2.html" title="Artist Statement">Artist Statement</a>
+    <a href="page3.html" title="Exhibitions">Exhibitions</a>
+        <a href="page4.html" title="Galleries">Galleries</a>
+        <a href="page5.2.html" title="Consultations & Prints">Consultations & Prints</a>
+        <a href="page6.html" title="Contact">Contact</a>
+	
+    
+    </nav>
+	
+<div class="box1"> 
+<h2>FINE ART PORTRAITS</h2> 
+<p>
+A session fee covers the shoot itself, with no obligation to purchase images. Session fees start at $100.00.
+</p>
+<p>
+Where - Your session can take place wherever you like: in your home or cottage, a park, anywhere familiar and comfortable for you and your family
+</p>
+<p>
+Time-of-Day - I perfer to use as much natural light as possible to maintain the integrity of the moment we are trying to capture; therefore, morning and afternoon sessions are best for outdoor shooting, morning and early afternoon for indoor shooting.
+</p>
+<p>
+Set up a Session - All personal, individual or business requests are accepted please contact ballanphotography@rogers.com to setup a free consultation.
+ </p>
+ </div>
+  <div class="box1s">
+ 
+	<table style="border:none;background-color:transparent;float:centre;"> 
+<tr> 
+<td >
+<img onclick="prev()" title="Previous" alt ="Prev" height="25" width="15"src="rightarrow.png"/> 
+</td>
+<td> 
+<img name="slide" id="slide" alt ="my images" height="285" width="485" src="image-1.png"/> 
+</td> 
+<td >
+<img onclick="next()" title="Next" alt ="Next" height="25" width="15" src="leftarrow.png"/> 
+</td>
+</tr> 
+  
+</table>
+
+ </div>
+
+ <div class="box1"> 
+<h2>PRICING AND PRINTS</h2> 
+<p>
+Prints of all the images on this site are available for purchase in a variety of sizes
+</p>
+<h3>Small Print</h3>
+<p>
+(up to 7 X 5 or 5 X 5) - $50.00
+</p>
+<h3>Medium Print</h3>
+<p>
+(up to 8 X 10 or 8 X 8) - $100.00
+</p>
+<h3>Large Print</h3>
+<p>
+(up to 20 X 16 or 16 X 16) - $150.00
+</p>
+ </div>
+
+ 
+
+</body>
+</html>

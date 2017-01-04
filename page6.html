@@ -1,0 +1,112 @@
+<html>
+
+<head>
+   <title>DContact</title>
+  <link rel="stylesheet" href="stylenav.css">
+  <meta charset="UTF-8">
+	  <script type="text/javascript"> 
+var i = 0; 
+var image = new Array();   
+// LIST OF IMAGES 
+image[0] = "http://www.ballan.ca/page_images/contact01.jpg"; 
+image[1] = "http://www.ballan.ca/page_images/contact02.jpg"; 
+image[2] = "http://www.ballan.ca/page_images/contact03.jpg"; 
+image[3] = "http://www.ballan.ca/page_images/contact04.jpg";     
+image[4] = "http://www.ballan.ca/page_images/contact05.jpg";   
+image[5] = "http://www.ballan.ca/page_images/contact06.jpg";   
+image[6] = "http://www.ballan.ca/page_images/contact07.jpg";   
+image[7] = "http://www.ballan.ca/page_images/contact08.jpg";   
+
+var k = image.length-1;    
+var caption = new Array(); 
+
+
+
+function next(){
+var img= document.getElementById("slide"); 
+img.src= image[i]; 
+if(i < k ) { i++;}  
+else  { i = 0; }
+}
+
+function prev(){
+var img= document.getElementById("slide"); 
+img.src= image[i]; 
+if(i >0 ) { i--;}  
+else  { i = k; }
+}
+
+function swapImage(){ 
+var img= document.getElementById("slide"); 
+img.src= image[i]; 
+if(i < k ) { i++;}  
+else  { i = 0; } 
+setTimeout("swapImage()",2500); 
+} 
+function addLoadEvent(func) { 
+var oldonload = window.onload; 
+if (typeof window.onload != 'function') { 
+window.onload = func; 
+} else  { 
+window.onload = function() { 
+if (oldonload) { 
+oldonload(); 
+} 
+func(); 
+} 
+} 
+} 
+addLoadEvent(function() { 
+swapImage(); 
+});  
+</script> 
+  
+
+</head>
+<body>
+
+    <nav>
+	<a href="home.html" title="Home">Home</a>
+    <a href="page2.html" title="Artist Statement">Artist Statement</a>
+    <a href="page3.html" title="Exhibitions">Exhibitions</a>
+        <a href="page4.2.html" title="Galleries">Galleries</a>
+        <a href="page5.2.html" title="Consultations & Prints">Consultations & Prints</a>
+        <a href="page6.html" title="Contact">Contact</a>
+	
+    
+    </nav>
+
+
+ 
+<div id="topDiv2">
+
+ <?php include_once('contact2.php'); ?>
+ 
+ 	<table style="border:none;background-color:transparent;float:centre;display:inline-block;margin-left:2%;"> 
+<tr> 
+<td >
+<img onclick="prev()" title="Previous" alt ="Prev" height="25" width="15"src="rightarrow.png"/> 
+</td>
+<td> 
+<img name="slide" id="slide" alt ="my images" height="285" width="485" src="image-1.png"/> 
+</td> 
+<td >
+<img onclick="next()" title="Next" alt ="Next" height="25" width="15" src="leftarrow.png"/> 
+</td>
+</tr> 
+  
+</table>
+ </div>
+
+  <footer>
+<p class="foot">©2014 Barbara Allan Photography
+ <a href="http://facebook.com/" title="facebook"><img class="iconF" src="facebook500.png" alt="facebook" ></a>
+
+<a href="http://twitter.com/" title="twitter"><img class="iconF" src="twit.png" alt="twitter" ></a>
+<a href="page6.html" title="contact"><img class="iconF" src="contact.png" alt="contact" ></a>
+<a href="http://pinterest.com/USERNAME/" title="pinterest"><img class="iconF" src="pinterest.png" alt="pinterest" ></a></p>
+
+</footer>
+
+</body>
+</html>
